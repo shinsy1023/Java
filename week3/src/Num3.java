@@ -23,17 +23,17 @@ public class Num3 {
 }
 
 class UserInfo{
-    int password;
+    String password;
     String ID;
     Scanner s=new Scanner(System.in);
 
     void input(int num){
         System.out.printf("%d번 학생의 아이디, 비밀번호를 입력하세요.", num+1);
-        this.ID=s.nextLine();
-        this.password=s.nextInt();
+        this.ID=s.next();
+        this.password=s.next();
     }
 
     void print(int index){
-        System.out.printf("%-4d%-12s%d\n", index+1, this.ID, this.password);
+        System.out.printf("%-4d%-12s%s\n", index+1, this.ID, this.password);
     }
 }
